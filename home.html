@@ -11,9 +11,11 @@
 
 <style>
 body {
-  background-image: url("fjords.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
+  opacity: 0.9;
 }
 
 class.logo {
@@ -22,18 +24,57 @@ class.logo {
     margin-right: auto;
   }
 
+.menu {
+  margin-top: 20px;
 }
+.nav {
+    border: 3px solid white;
+    display: inline;
+    float: left;
+    font-size: 24px;
+    font-family: <link rel="shortcut icon" href=".ico">
+    padding: 7px;
+    list-style: none;
+  }
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav1 {
+  width: 100px;
+  list-style: none;
+}
+
+#nav2 {
+  width: 100px;
+  list-style: none;
+}
+
+#nav3 {
+  width: 100px;
+  list-style: none;
+}
+
 </style>
 </head>
-
+<!--- may leave logo out of
 <div class="logo">
-  <img src="images.jpeg">
-  <nav>
-    <a href="portfolio.html"/> Portfolio</a>
-    <a href="shop.html"/>Shop</a>
-    <a href="aboutme.html"/>About Me</a>
-  </nav>
+  <center><img src="images.jpeg"></center></div>
+  <br>
+--->
+<div class="menu">
+<div class="nav" id="nav1">
+    <center><a href="portfolio.html"/> Portfolio</a></center></div>
 
+<div class="nav" id="nav2">
+    <center><a href="shop.html"/>Shop</a></center></div>
+
+<div class="nav" id="nav3">
+    <center><a href="aboutme.html"/>About Me</a></center></div>
+</div>
 <!---artiest logo goes here center (linked to homepage)--->
 <img src="">
 

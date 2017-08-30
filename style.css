@@ -1,19 +1,15 @@
 body {
-  background:
+
 }
 
 .blocks {
-  height: 500px;
+  height: 200px;
 }
 
 
 nav {
-  float: inherit;
-}
+  outline: inherit;
+  outline-color: white;
+  outline-style: inset;
 
-
-class .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
