@@ -4,6 +4,7 @@ body {
   background-size: cover;
   background-color: black;
   opacity: 0.9;
+  margin: 0;
 }
 
 class.logo {
@@ -28,6 +29,9 @@ class.logo {
     margin-left: 20px;
     margin-right: 20px;
   }
+.nav:hover {
+  opacity: 0.5;
+}
 
 
 a {

@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 
-
 <html lang = "en">
 <meta charset = "utf-8"/>
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>SAY SUN</title>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="stylesheet" href="https://maxcdn.bootstrap.cdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.y/js/bootstrap.min.js"></script>
 
+<!---Style within Portfolio Page--->
 <style>
 
-.video {
-  width:auto;
+video {
+  min-width: 100%;
+  min-height: 70%;
+  object-fit: cover;
+}
+
+.logo {
+  min-width: 100%;
   height:500;
 }
+
 .photos {
-  float: left;
-  border: 4px solid white;
+  display: inline-table;
+  justify-content: center;
   background-color: white;
-  padding-left: 2px;
-  padding-right: 2px;
-  margin-left: 47px;
-  margin-right: 47px;
-  height:auto;
-  width:auto;
-  margin: 5px 10px 5 3px;
+  margin-left: 49px;
+  margin-right: 49px;
 }
+
 .photos:hover {
   opacity: 0.5;
 }
-
-
-
-
-
 </style>
 </head>
 <!--- may leave logo out of
@@ -43,35 +44,48 @@
 --->
 <div class="menu">
 <div class="nav" id="nav1">
-    <center><a href="portfolio.html"/> Portfolio</a></center></div>
+    <a href="portfolio.html"/> Portfolio</a></div>
 <div class="nav" id="nav2">
-    <center><a href="shop.html"/>Shop</a></center></div>
+    <a href="shop.html"/>Shop</a></div>
 <div class="nav" id="nav3">
-    <center><a href="aboutme.html"/>About Me</a></center></div>
+    <a href="aboutme.html"/>About Me</a></div>
 </div>
 <!---artiest logo goes here center (linked to homepage)--->
-<div class="video">
+<br>
+<br>
+<br>
+<!---artist video introduction goes here--->
+<video controls autoplay>
+    <source src="" height="auto" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+</video>
+
+<!---logo goes here--->
+<div class="container-fluid">
+<div class="logo">
   <center><img src="samplecopy.png"></center>
 </div>
+</div>
 
-<div class="photos">
-  <col-span="3">
- <img width="300" height="400" border="0" src="samplecopy.png"/>
- </div>
-<div class="photos">
-  <img width="300" height="400" border="0" src="samplecopy.png"/>
+
+<!---artist photo grid goes here--->
+<div class="container-fluid">
+  <div class="photos">
+    <col span="one-third" align="center" vertical-align="middle">
+      <img width="300" height="400" border="0"  src="samplecopy.png"/>
 </div>
   <div class="photos">
-   <img width="300" height="400" border="0" src="samplecopy.png"/>
- </div>
+    <col span="one-third">
+      <img postion="absolute" width="300" height="400" border="0" src="samplecopy.png"/>
+  </div>
+  <div class="photos">
+    <col span="one-third">
+      <img position="absolute" width="300" height="400" border="0" src="samplecopy.png"/>
+  </div>
 </div>
-
 
 
 <!---test--->
-
-
-
 </body>
-
 </html>
